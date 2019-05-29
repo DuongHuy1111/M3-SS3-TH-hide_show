@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="jquery/jquery-3.4.1.min.js"></script>
+
+</head>
+<body>
+<script>
+    $(document).ready(function () {
+        $("#hide").click(function () {
+            $("p").hide(500);
+        });
+
+        $("#show").click(function () {
+            $("p").show(500)
+        })
+    });
+
+</script>
+<div class="container">
+    <button class="btn btn-info btn-sm" id="hide">Hide</button>
+    <button class="btn btn-primary btn-sm" id="show">Show</button>
+    <p>
+        Microsoft khi truy cập vào một trang web khác. Kết quả là, nó sẽ được nạp từ cache (bộ nhớ đệm) khi họ truy cập
+        vào trang web của bạn, do đó dẫn đến thời gian tải nhanh hơn. Ngoài ra, hầu hết CDN sẽ đảm bảo chắc chắn rằng
+        khi người dùng yêu cầu một tập tin từ nó, nó sẽ được phục vụ từ máy chủ gần họ nhất, do đó cũng làm cho thời
+        gian tải nhanh hơn.
+    </p>
+</div>
+
+
+</body>
+</html>
